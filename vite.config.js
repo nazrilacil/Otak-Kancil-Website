@@ -11,11 +11,14 @@ function seoFinalDomain(siteUrl) {
     transformIndexHtml() {
       if (!siteUrl) return
       const page = `${siteUrl}/`
-      const image = `${siteUrl}/favicon.png`
+      const image = `${siteUrl}/og-image.png`
       return [
         { tag: 'link', attrs: { rel: 'canonical', href: page }, injectTo: 'head' },
         { tag: 'meta', attrs: { property: 'og:url', content: page }, injectTo: 'head' },
         { tag: 'meta', attrs: { property: 'og:image', content: image }, injectTo: 'head' },
+        { tag: 'meta', attrs: { property: 'og:image:width', content: '1200' }, injectTo: 'head' },
+        { tag: 'meta', attrs: { property: 'og:image:height', content: '630' }, injectTo: 'head' },
+        { tag: 'meta', attrs: { property: 'og:image:alt', content: 'Otak Kancil — aplikasi edukasi Android' }, injectTo: 'head' },
         { tag: 'meta', attrs: { name: 'twitter:image', content: image }, injectTo: 'head' },
       ]
     },
