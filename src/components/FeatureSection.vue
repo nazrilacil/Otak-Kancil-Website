@@ -1,7 +1,7 @@
 <script setup>
 import { site } from '../config/site'
 import { useI18n } from '../composables/useI18n'
-import { iconMap } from './iconMap'
+import { iconMap } from './iconMap.js'
 import StatusBadge from './StatusBadge.vue'
 
 const { L } = useI18n()

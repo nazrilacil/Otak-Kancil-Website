@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { Menu, X, PawPrint, Download } from 'lucide-vue-next'
 import { site } from '../config/site'
 import { useI18n } from '../composables/useI18n'
-import { iconMap } from './iconMap'
+import { iconMap } from './iconMap.js'
 import ThemeToggle from './ThemeToggle.vue'
 import LangToggle from './LangToggle.vue'
 

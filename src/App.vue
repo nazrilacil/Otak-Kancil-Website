@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { site } from './config/site'
-import { iconMap } from './components/iconMap'
+import { iconMap } from './components/iconMap.js'
 import { useReveal } from './composables/useReveal'
 import { useI18n } from './composables/useI18n'
 import Navbar from './components/Navbar.vue'
